@@ -2,6 +2,10 @@
   "name": "angular-io-example",
   "version": "1.0.0",
   "private": true,
+  
+  "engines": {
+    "node": "8.9.x"
+  },
   "description": "Example project from an angular.io guide.",
   "scripts": {
     "ng": "ng",
@@ -9,7 +13,8 @@
     "start": "ng serve",
     "test": "ng test",
     "lint": "tslint ./src/**/*.ts -t verbose",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
   },
   "keywords": [],
   "author": "",
